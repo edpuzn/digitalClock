@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    font-family: 'Arial', sans-serif;
+}
+
+.clock-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Ortala */
+    background: #111;
+    border-radius: 20px;
+    padding: 20px 40px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    border: 3px solid #fff; /* Beyaz çerçeve */
+}
+
+.days {
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    font-size: 14px;
+    margin-right: 30px;
+}
+
+.days span {
+    margin: 5px 0;
+}
+
+.days .active {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
+}
+
+#clock {
+    font-size: 5rem;
+    color: #fff;
+    letter-spacing: 10px;
+    font-family: 'Courier New', monospace;
+    text-shadow:
+            0px 0px 5px rgba(255, 255, 255, 0.8),
+            0px 0px 10px rgba(255, 255, 255, 0.6),
+            0px 0px 15px rgba(255, 255, 255, 0.4);
+}
